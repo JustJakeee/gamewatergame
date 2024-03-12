@@ -11,15 +11,18 @@ public class UIManager : MonoBehaviour
     private int score = 0;
 
     [SerializeField]
-    private TextMeshProUGUI bossFightIndicator;
+    private GameObject boss;
     public int bossFightThreshold = 0;
+    [SerializeField]
+    private TrashGen trashGen;
 
     public void UpdateScore(int pointsToAdd)
     {
         score += pointsToAdd;
         scoreText.text = "Score: " + score.ToString();
         if (score >= bossFightThreshold) {
-            bossFightIndicator.gameObject.SetActive(true);
+            boss.SetActive(true);
+            trashGen.enabled = false;
         }
     }
 

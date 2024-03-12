@@ -30,5 +30,6 @@ public class BoatMove : MonoBehaviour
         localOffset += moveDir * localMovespeed * Time.deltaTime;
         Vector3 newPos = new Vector3(localOffset.x, transform.position.y, localOffset.y + offset.globalOffset);
         transform.position = newPos;
+        transform.rotation = Quaternion.identity;
     }
 }
