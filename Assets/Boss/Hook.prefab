@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8080668145540693218}
   - component: {fileID: 5392934906114719813}
   - component: {fileID: -1403502372117939554}
+  - component: {fileID: -1399558452780694988}
   m_Layer: 0
   m_Name: Hook
   m_TagString: Untagged
@@ -119,3 +120,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossHealth: {fileID: 0}
+--- !u!114 &-1399558452780694988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83153468854173509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68b349d53732b104c99eb6a8640fc8d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
