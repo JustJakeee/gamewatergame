@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class waterGen : MonoBehaviour
+public class WaterGen : MonoBehaviour
 {
     public GameObject tile;
+    public WaveManager waveManager;
     public float stepSize = 10;
     public int stepCount = 10000;
     public int startIndex = 0;
@@ -15,7 +16,8 @@ public class waterGen : MonoBehaviour
     {
         for (int i = startIndex; i < stepCount; i++)
         {
-            Instantiate(tile, new Vector3(0, 0, i * stepSize), Quaternion.identity);
+            GameObject newWater = Instantiate(tile, new Vector3(0, 0, i * stepSize), Quaternion.identity);
+            newWater.GetComponent<DistributeWaveManager>().waveManager = waveManager;
         }
     }
 }
