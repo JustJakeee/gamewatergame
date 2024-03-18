@@ -8,11 +8,16 @@ public class WaveManager : MonoBehaviour
     [SerializeField]
     private Vector3[] values;
 
-    public Offset offset;
+    private Offset offset;
     public float speed = 1f;
     public float steepness = 1f;
     public float amp = 1f;
     public float length = 1f;
+
+    private void Start()
+    {
+        offset = GetComponent<Offset>();
+    }
 
     public float GetWaveHeight(Vector3 position)
     {

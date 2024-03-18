@@ -8,16 +8,31 @@ public class WaterGen : MonoBehaviour
 {
     public GameObject tile;
     public WaveManager waveManager;
-    public float stepSize = 10;
-    public int stepCount = 10000;
-    public int startIndex = 0;
+    public Offset offset;
+    public float stepSize = 10f;
+    private float step = 0f;
+    public Vector2 bounds;
 
-    private void Start()
+    private void Update()
     {
-        for (int i = startIndex; i < stepCount; i++)
-        {
-            GameObject newWater = Instantiate(tile, new Vector3(0, 0, i * stepSize), Quaternion.identity);
-            newWater.GetComponent<DistributeWaveManager>().waveManager = waveManager;
+        while (offset.globalOffset + bounds.y > step * stepSize) {
+            spawnWater(new Vector3(0,0, step *  stepSize));
+            step += 1;
         }
+
+        GameObject[] tiles = GameObject.FindGameObjectsWithTag("WaterTiles");
+
+        foreach (GameObject currentTile in tiles)
+        {
+            if (currentTile.transform.position.z < offset.globalOffset + bounds.x) {
+                Destroy(currentTile);
+            }
+        }
+    }
+    
+    private void spawnWater(Vector3 position)
+    {
+        GameObject newWater = Instantiate(tile, position, Quaternion.identity);
+        newWater.GetComponent<DistributeWaveManager>().waveManager = waveManager;
     }
 }
