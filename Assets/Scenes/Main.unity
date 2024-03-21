@@ -211,7 +211,7 @@ Transform:
   m_GameObject: {fileID: 430428423}
   serializedVersion: 2
   m_LocalRotation: {x: 0.52879405, y: 0.00000013231896, z: -0.000000023083997, w: 0.84875023}
-  m_LocalPosition: {x: 0, y: 22.280008, z: -16.2}
+  m_LocalPosition: {x: 0, y: 15.54, z: -6.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -323,6 +323,7 @@ MonoBehaviour:
   tile: {fileID: 8367571391278316075, guid: 717af767cd2f8044c857434f93b1b1c8, type: 3}
   waveManager: {fileID: 1244433359}
   offset: {fileID: 1352693986}
+  verticalOffset: 0
   stepSize: 10
   bounds: {x: -20, y: 60}
 --- !u!114 &526701180
