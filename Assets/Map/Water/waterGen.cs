@@ -9,14 +9,15 @@ public class WaterGen : MonoBehaviour
     public GameObject tile;
     public WaveManager waveManager;
     public Offset offset;
+    public float verticalOffset;
     public float stepSize = 10f;
     private float step = 0f;
     public Vector2 bounds;
 
     private void Update()
     {
-        while (offset.globalOffset + bounds.y > step * stepSize) {
-            spawnWater(new Vector3(0,0, step *  stepSize));
+        while (offset.globalOffset + bounds.y > (step + verticalOffset) * stepSize) {
+            spawnWater(new Vector3(0,0, step *  stepSize)); 
             step += 1;
         }
 

@@ -40,21 +40,23 @@ public class HookGen : MonoBehaviour
 
         if (cooldown > 0) return;
 
-        if (nextHookPosition == null) {
+        /*if (nextHookPosition == null) {
             nextHookPosition = GetRandomPointInBox();
-        }
+        }*/
 
         boxCenter = new Vector2(0, offset.globalOffset + verticalOffset);
-        GameObject newHook = Instantiate(hook, nextHookPosition, Quaternion.identity);
+        GameObject newHook = Instantiate(hook, transform.position, Quaternion.identity);
         newHook.GetComponent<HookCollection>().bossHealth = health;
-        newHook.GetComponent<HookMove>().offset = offset;
-        nextHookPosition = playerPosition;
+        newHook.GetComponent<HookMove>().gameOffset = offset;
+        newHook.GetComponent<HookMove>().playerPositionAtSpawn = playerPosition;
+        newHook.GetComponent<HookMove>().bossTransformAtSpawn = transform.position;
+        /*nextHookPosition = playerPosition;
         nextHookPosition.z += offset.globalMovespeed * delay;
-        nextHookPosition.y = 0;
+        nextHookPosition.y = 0;*/
         cooldown = delay;
     }
 
-    private Vector3 GetRandomPointInBox()
+    /*private Vector3 GetRandomPointInBox()
     {
         // Calculate the minimum and maximum coordinates of the box
         float minX = boxCenter.x - boxSize.x / 2f;
@@ -67,5 +69,5 @@ public class HookGen : MonoBehaviour
         float randomY = Random.Range(minY, maxY);
 
         return new Vector3(randomX, 0, randomY);
-    }
+    }*/
 }
