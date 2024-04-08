@@ -1,29 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
-public class UIManager : MonoBehaviour
+public class ScoreManager : MonoBehaviour
 {
+
     [SerializeField]
     private TextMeshProUGUI scoreText;
-    private int score = 0;
+    public int score = 0;
 
-    [SerializeField]
-    private GameObject boss;
-    public int bossFightThreshold = 0;
-    [SerializeField]
-    private TrashGen trashGen;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 
     public void UpdateScore(int pointsToAdd)
     {
         score += pointsToAdd;
         scoreText.text = "Score: " + score.ToString();
-        if (score >= bossFightThreshold) {
-            boss.SetActive(true);
-            trashGen.enabled = false;
-        }
     }
 
     // Call this method to reset the score, e.g., when starting a new game or level

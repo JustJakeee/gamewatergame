@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Collection : MonoBehaviour
 {
-    public UIManager UI;
+    public ScoreManager UI;
 
     public void collect()
     {

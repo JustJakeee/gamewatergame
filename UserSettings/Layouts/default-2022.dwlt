@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 119
+  controlID: 402
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 69
+  controlID: 43
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 43
+  controlID: 44
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -217,14 +217,14 @@ MonoBehaviour:
     height: 630
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
   - {fileID: 14}
   - {fileID: 15}
   - {fileID: 16}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -299,10 +299,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 288.80002
-    y: 73.6
-    width: 882.00006
-    height: 459.8
+    x: 361
+    y: 73
+    width: 1103
+    height: 609
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -661,9 +661,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -24.13795, y: 40.909576, z: 20.039082}
+    m_Target: {x: 0.2646241, y: 13.49763, z: -3.7265215}
     speed: 2
-    m_Value: {x: -24.13795, y: 40.909576, z: 20.039082}
+    m_Value: {x: 0.2646241, y: 13.49763, z: -3.7265215}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -696,7 +696,7 @@ MonoBehaviour:
         m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 1, y: 1}
+      m_Size: {x: 100, y: 100}
     zGrid:
       m_Fade:
         m_Target: 0
@@ -709,13 +709,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.33512634, y: -0.56938547, z: 0.27305135, w: -0.69930595}
+    m_Target: {x: -0.30126697, y: 0.0005832803, z: -0.000040242863, w: -0.95361984}
     speed: 2
-    m_Value: {x: -0.33511037, y: -0.56935835, z: 0.27303833, w: -0.69927263}
+    m_Value: {x: -0.30124357, y: 0.002013555, z: -0.00049210555, w: -0.95354503}
   m_Size:
-    m_Target: 10.177645
+    m_Target: 0.86077493
     speed: 2
-    m_Value: 10.177645
+    m_Value: 0.86077493
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -777,8 +777,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d86e0000
-      m_LastClickedID: 28376
+      m_SelectedIDs: 0ee4ffff
+      m_LastClickedID: -7154
       m_ExpandedIDs: 2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -870,7 +870,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -921,10 +921,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 288.80002
-    y: 73.6
-    width: 882.00006
-    height: 459.8
+    x: 361
+    y: 73
+    width: 1103
+    height: 609
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -3154,10 +3154,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 288.80002
-    y: 73.6
-    width: 882.00006
-    height: 459.8
+    x: 361
+    y: 73
+    width: 1103
+    height: 609
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -4625,7 +4625,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Boss
+    - Assets
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -4633,16 +4633,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Boss
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\lesli\Projects\gamewatergame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 29}
-    m_SelectedIDs: 9a710000
-    m_LastClickedID: 29082
-    m_ExpandedIDs: 000000008671000000ca9a3bffffff7f
+    m_SelectedIDs: 86710000
+    m_LastClickedID: 29062
+    m_ExpandedIDs: 0000000086710000a071000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4747,9 +4747,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 554.4
-    width: 1171.8
-    height: 221
+    y: 703
+    width: 1465
+    height: 296
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -4845,7 +4845,7 @@ MonoBehaviour:
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
-  currentTrackingStatusHasUpdate: 0
+  currentTrackingStatusHasUpdate: 1
   currentStatusEntriesHasUpdate: 1
   repositoryProgressHasUpdate: 1
   appManagerProgressHasUpdate: 1
@@ -5031,10 +5031,7 @@ MonoBehaviour:
       assets:
         keys:
         - 00000000000000001000000000000000
-        - c51cc37435b77ef4d97c9e2b9f42208d
-        - a964ad5f0cbc876438dee14d011e5268
-        - 7cfa453a4541db446b9e738be2d6496e
-        - dab62545543af9a4d8a7dca5aba6271f
+        - f8b211fff12af674abea7107a578be02
         values:
         - path: Assets
           label: Assets
@@ -5054,27 +5051,9 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\Water
-          label: Water
+        - path: Assets\Oil.shader
+          label: Oil.shader
           level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Water\Floater.cs
-          label: Floater.cs
-          level: 2
           isFolder: 0
           isContainer: 1
           isCollapsed: 0
@@ -5084,52 +5063,17 @@ MonoBehaviour:
           checkState: 0
           isLocked: 0
           gitStatusEntry:
-            path: Assets\Water\Floater.cs
-            fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Water\Floater.cs
-            projectPath: Assets\Water\Floater.cs
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Water\WaterManager.cs
-          label: WaterManager.cs
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Water\WaterManager.cs
-            fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Water\WaterManager.cs
-            projectPath: Assets\Water\WaterManager.cs
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Water\WaveManager.cs
-          label: WaveManager.cs
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Water\WaveManager.cs
-            fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Water\WaveManager.cs
-            projectPath: Assets\Water\WaveManager.cs
+            path: Assets\Oil.shader
+            fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Oil.shader
+            projectPath: Assets\Oil.shader
             originalPath: 
             indexStatus: 1
             workTreeStatus: 1
       folders:
         keys:
         - Assets
-        - Assets\Water
+        - UserSettings
+        - UserSettings\Layouts
         values:
         - path: Assets
           label: Assets
@@ -5149,8 +5093,26 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\Water
-          label: Water
+        - path: UserSettings
+          label: UserSettings
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: UserSettings\Layouts
+          label: Layouts
           level: 1
           isFolder: 1
           isContainer: 0
@@ -5213,9 +5175,27 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Water.meta
-        label: Water.meta
+      - path: Assets\Oil.shader
+        label: Oil.shader
         level: 1
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Oil.shader
+          fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Oil.shader
+          projectPath: Assets\Oil.shader
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Oil.shader.meta
+        label: Oil.shader.meta
+        level: 2
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -5225,14 +5205,32 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Water.meta
-          fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Water.meta
-          projectPath: Assets\Water.meta
+          path: Assets\Oil.shader.meta
+          fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Oil.shader.meta
+          projectPath: Assets\Oil.shader.meta
           originalPath: 
           indexStatus: 1
           workTreeStatus: 1
-      - path: Assets\Water
-        label: Water
+      - path: UserSettings
+        label: UserSettings
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings\Layouts
+        label: Layouts
         level: 1
         isFolder: 1
         isContainer: 0
@@ -5249,27 +5247,9 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Water\Floater.cs
-        label: Floater.cs
+      - path: UserSettings\Layouts\default-2022.dwlt
+        label: default-2022.dwlt
         level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Water\Floater.cs
-          fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Water\Floater.cs
-          projectPath: Assets\Water\Floater.cs
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Water\Floater.cs.meta
-        label: Floater.cs.meta
-        level: 3
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -5279,84 +5259,12 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Water\Floater.cs.meta
-          fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Water\Floater.cs.meta
-          projectPath: Assets\Water\Floater.cs.meta
+          path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Users\lesli\Projects\gamewatergame\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
           originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Water\WaterManager.cs
-        label: WaterManager.cs
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Water\WaterManager.cs
-          fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Water\WaterManager.cs
-          projectPath: Assets\Water\WaterManager.cs
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Water\WaterManager.cs.meta
-        label: WaterManager.cs.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Water\WaterManager.cs.meta
-          fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Water\WaterManager.cs.meta
-          projectPath: Assets\Water\WaterManager.cs.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Water\WaveManager.cs
-        label: WaveManager.cs
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Water\WaveManager.cs
-          fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Water\WaveManager.cs
-          projectPath: Assets\Water\WaveManager.cs
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Water\WaveManager.cs.meta
-        label: WaveManager.cs.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Water\WaveManager.cs.meta
-          fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Water\WaveManager.cs.meta
-          projectPath: Assets\Water\WaveManager.cs.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
+          indexStatus: 0
+          workTreeStatus: 3
       selectedNode:
         path: 
         label: 
@@ -5377,57 +5285,33 @@ MonoBehaviour:
           indexStatus: 0
           workTreeStatus: 0
     gitStatusEntries:
-    - path: Assets\Water.meta
-      fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Water.meta
-      projectPath: Assets\Water.meta
+    - path: Assets\Oil.shader
+      fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Oil.shader
+      projectPath: Assets\Oil.shader
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Water\Floater.cs
-      fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Water\Floater.cs
-      projectPath: Assets\Water\Floater.cs
+    - path: Assets\Oil.shader.meta
+      fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Oil.shader.meta
+      projectPath: Assets\Oil.shader.meta
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Water\Floater.cs.meta
-      fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Water\Floater.cs.meta
-      projectPath: Assets\Water\Floater.cs.meta
+    - path: UserSettings\Layouts\default-2022.dwlt
+      fullPath: C:\Users\lesli\Projects\gamewatergame\UserSettings\Layouts\default-2022.dwlt
+      projectPath: UserSettings\Layouts\default-2022.dwlt
       originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Water\WaterManager.cs
-      fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Water\WaterManager.cs
-      projectPath: Assets\Water\WaterManager.cs
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Water\WaterManager.cs.meta
-      fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Water\WaterManager.cs.meta
-      projectPath: Assets\Water\WaterManager.cs.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Water\WaveManager.cs
-      fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Water\WaveManager.cs
-      projectPath: Assets\Water\WaveManager.cs
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Water\WaveManager.cs.meta
-      fullPath: C:\Users\lesli\Projects\gamewatergame\Assets\Water\WaveManager.cs.meta
-      projectPath: Assets\Water\WaveManager.cs.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    changedFilesText: 7 changed files
+      indexStatus: 0
+      workTreeStatus: 3
+    changedFilesText: 3 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2024-03-26T20:28:50.001-04:00
+      updatedTimeString: 2024-03-31T22:41:54.054-04:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2024-03-26T22:28:38.660-04:00
+      updatedTimeString: 2024-03-31T22:50:02.483-04:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2024-03-26T20:41:49.416-04:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -7872,7 +7756,7 @@ MonoBehaviour:
   hasRemote: 1
   currentRemoteName: origin
   currentBranch: master
-  currentRemoteUrl: git@github.com:JustJakeee/gamewatergame
+  currentRemoteUrl: https://github.com/JustJakeee/gamewatergame.git
   statusAhead: 0
   statusBehind: 0
   hasItemsToCommit: 1
@@ -7882,17 +7766,17 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Active branch
   currentRemoteUrlContent:
-    m_Text: git@github.com:JustJakeee/gamewatergame
+    m_Text: https://github.com/JustJakeee/gamewatergame.git
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2024-03-13T16:31:12.865-04:00
+    updatedTimeString: 2024-03-31T15:42:05.078-04:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2024-03-13T16:35:23.622-04:00
+    updatedTimeString: 2024-03-31T15:55:25.083-04:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2024-03-13T17:13:05.602-04:00
+    updatedTimeString: 2024-03-31T15:55:25.067-04:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
