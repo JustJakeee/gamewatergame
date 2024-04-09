@@ -123,6 +123,85 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &34928332 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5414745384199873965, guid: cd1dca05aea972847a4b88b1175131ed, type: 3}
+  m_PrefabInstance: {fileID: 400200026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &34928338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34928332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdb8a2cd1e6442f41a6017c003c880bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waveManager: {fileID: 1244433359}
+  offset: {fileID: 1352693986}
+--- !u!1001 &400200026
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4141829542344324801, guid: cd1dca05aea972847a4b88b1175131ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141829542344324801, guid: cd1dca05aea972847a4b88b1175131ed, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -79.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141829542344324801, guid: cd1dca05aea972847a4b88b1175131ed, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 100000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141829542344324801, guid: cd1dca05aea972847a4b88b1175131ed, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141829542344324801, guid: cd1dca05aea972847a4b88b1175131ed, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141829542344324801, guid: cd1dca05aea972847a4b88b1175131ed, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141829542344324801, guid: cd1dca05aea972847a4b88b1175131ed, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141829542344324801, guid: cd1dca05aea972847a4b88b1175131ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141829542344324801, guid: cd1dca05aea972847a4b88b1175131ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141829542344324801, guid: cd1dca05aea972847a4b88b1175131ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5414745384199873965, guid: cd1dca05aea972847a4b88b1175131ed, type: 3}
+      propertyPath: m_Name
+      value: Oil
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5414745384199873965, guid: cd1dca05aea972847a4b88b1175131ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 34928338}
+  m_SourcePrefab: {fileID: 100100000, guid: cd1dca05aea972847a4b88b1175131ed, type: 3}
 --- !u!1 &430428423
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,6 +363,8 @@ GameObject:
   m_Component:
   - component: {fileID: 526701178}
   - component: {fileID: 526701179}
+  - component: {fileID: 526701180}
+  - component: {fileID: 526701181}
   m_Layer: 0
   m_Name: Map
   m_TagString: Untagged
@@ -325,6 +406,41 @@ MonoBehaviour:
   verticalOffset: 0
   stepSize: 10
   bounds: {x: -20, y: 60}
+  sceneTwo: 1
+--- !u!114 &526701180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526701177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca72638e5f865cb458cbc048ade565f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: []
+  xRange: {x: -12, y: 12}
+  offset: {fileID: 1352693986}
+  time: 4
+--- !u!114 &526701181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526701177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef3618bd648ef4742a847fe31fc9a8af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: {fileID: 1352693986}
+  oil: {fileID: 34928332}
+  range: 20
+  steps: 30
+  spacing: 1
+  distance: 5
 --- !u!1 &694815855
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,7 +1053,6 @@ GameObject:
   - component: {fileID: 1289788600}
   - component: {fileID: 1289788605}
   - component: {fileID: 1289788606}
-  - component: {fileID: 1289788607}
   m_Layer: 0
   m_Name: Boat
   m_TagString: Untagged
@@ -1134,25 +1249,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee341b0ad9852e47bb0c3b54f7559b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1289788607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289788599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a964ad5f0cbc876438dee14d011e5268, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waveManager: {fileID: 1244433359}
-  rigidbody: {fileID: 1289788605}
-  depthBeforeSubmerged: 1
-  displacementAmount: 3
-  floaterCount: 1
-  waterDrag: 0.99
-  waterAngularDrag: 0.5
 --- !u!1 &1352693985
 GameObject:
   m_ObjectHideFlags: 0
@@ -1423,3 +1519,4 @@ SceneRoots:
   - {fileID: 1352693987}
   - {fileID: 1244433360}
   - {fileID: 700264384}
+  - {fileID: 400200026}

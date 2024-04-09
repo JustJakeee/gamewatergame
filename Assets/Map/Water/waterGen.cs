@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -13,11 +14,12 @@ public class WaterGen : MonoBehaviour
     public float stepSize = 10f;
     private float step = 0f;
     public Vector2 bounds;
+    public bool sceneTwo = false;
 
     private void Update()
     {
         while (offset.globalOffset + bounds.y > (step + verticalOffset) * stepSize) {
-            spawnWater(new Vector3(0,0, step *  stepSize)); 
+            SpawnWater(new Vector3(0,0, step *  stepSize)); 
             step += 1;
         }
 
@@ -31,9 +33,10 @@ public class WaterGen : MonoBehaviour
         }
     }
     
-    private void spawnWater(Vector3 position)
+    private void SpawnWater(Vector3 position)
     {
         GameObject newWater = Instantiate(tile, position, Quaternion.identity);
-        newWater.GetComponent<DistributeWaveManager>().waveManager = waveManager;
+        DistributeWaveManager distributeWaveManager = newWater.GetComponent<DistributeWaveManager>();
+        distributeWaveManager.waveManager = waveManager;
     }
 }
