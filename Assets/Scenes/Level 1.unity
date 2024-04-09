@@ -1001,6 +1001,70 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &665929382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 665929384}
+  - component: {fileID: 665929383}
+  - component: {fileID: 665929385}
+  m_Layer: 0
+  m_Name: StartTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &665929383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665929382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a7c95ea8924de458ec8012f2c214d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Clean Inc.
+    sentences:
+    - Welcome to Clean Inc., newbie. Here, we dedicate ourselves to cleaning and
+      protecting these oceans, contracted by big corporations to fix the mess they
+      leave behind.
+    - Your first job is to clean up the landfill that has invaded these oceans.
+--- !u!4 &665929384
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665929382}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &665929385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665929382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2541642077888e040b4398007d594055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &694815855
 GameObject:
   m_ObjectHideFlags: 0
@@ -1766,7 +1830,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2286063975909815633, guid: 3b4a7d03dbdaefe47b4c74d934abe76e, type: 3}
   m_PrefabInstance: {fileID: 1733315372649236770}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1670262488}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ac92238ecb4f544886c100c490c9deb, type: 3}
@@ -2169,7 +2233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1272583193
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2789,6 +2853,29 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1164846281}
   m_SourcePrefab: {fileID: 100100000, guid: 21b06d85ada4fb04dad892e537f9717c, type: 3}
+--- !u!1 &1670262488 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4486961034381048693, guid: 3b4a7d03dbdaefe47b4c74d934abe76e, type: 3}
+  m_PrefabInstance: {fileID: 1733315372649236770}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1670262491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670262488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a7c95ea8924de458ec8012f2c214d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: asdasd
+    sentences:
+    - sadasd a sdas dasd asdasdasd asda asd
+    - sadasd a sdas dasd asdasdasd asda asd
+    - sadasd a sdas dasd asdasdasd asda asd
 --- !u!1 &1711888886
 GameObject:
   m_ObjectHideFlags: 0
@@ -3359,7 +3446,7 @@ GameObject:
   - component: {fileID: 2058547419}
   - component: {fileID: 2058547418}
   m_Layer: 0
-  m_Name: DialgueManager
+  m_Name: DialogueManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3588,12 +3675,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 694815857}
     - target: {fileID: 4976378045991462960, guid: 3b4a7d03dbdaefe47b4c74d934abe76e, type: 3}
+      propertyPath: warningThreshold
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4976378045991462960, guid: 3b4a7d03dbdaefe47b4c74d934abe76e, type: 3}
       propertyPath: bossFightIndicator
       value: 
       objectReference: {fileID: 1389141955}
     - target: {fileID: 4976378045991462960, guid: 3b4a7d03dbdaefe47b4c74d934abe76e, type: 3}
       propertyPath: bossFightThreshold
-      value: 3
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6376599441814084380, guid: 3b4a7d03dbdaefe47b4c74d934abe76e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3638,7 +3729,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4486961034381048693, guid: 3b4a7d03dbdaefe47b4c74d934abe76e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1670262491}
   m_SourcePrefab: {fileID: 100100000, guid: 3b4a7d03dbdaefe47b4c74d934abe76e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -3661,3 +3755,4 @@ SceneRoots:
   - {fileID: 239038322}
   - {fileID: 1218986616}
   - {fileID: 1943640572}
+  - {fileID: 665929384}
