@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossHealth : MonoBehaviour
 {
@@ -14,6 +15,6 @@ public class BossHealth : MonoBehaviour
 
     private void die()
     {
-        Destroy(gameObject);
+        SceneManager.LoadScene("Level 2");
     }
 }
