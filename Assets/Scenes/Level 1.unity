@@ -275,6 +275,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d9c5cbf49aba22a4fad01b270cfc0d47, type: 3}
       insertIndex: -1
       addedObject: {fileID: 315857674}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d9c5cbf49aba22a4fad01b270cfc0d47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 315857680}
   m_SourcePrefab: {fileID: 100100000, guid: d9c5cbf49aba22a4fad01b270cfc0d47, type: 3}
 --- !u!1 &315857673 stripped
 GameObject:
@@ -429,6 +432,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d9c5cbf49aba22a4fad01b270cfc0d47, type: 3}
   m_PrefabInstance: {fileID: 239038322}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &315857680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315857673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a2d3879592b9f46bd1c4b6b38c7f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &360642608
 GameObject:
   m_ObjectHideFlags: 0
@@ -2383,6 +2399,7 @@ GameObject:
   - component: {fileID: 1289788605}
   - component: {fileID: 1289788606}
   - component: {fileID: 1289788607}
+  - component: {fileID: 1289788608}
   m_Layer: 0
   m_Name: Boat
   m_TagString: Untagged
@@ -2598,6 +2615,19 @@ MonoBehaviour:
   floaterCount: 1
   waterDrag: 0.99
   waterAngularDrag: 0.5
+--- !u!114 &1289788608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289788599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a2d3879592b9f46bd1c4b6b38c7f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &1352693985
 GameObject:
   m_ObjectHideFlags: 0
@@ -3684,7 +3714,7 @@ PrefabInstance:
       objectReference: {fileID: 1389141955}
     - target: {fileID: 4976378045991462960, guid: 3b4a7d03dbdaefe47b4c74d934abe76e, type: 3}
       propertyPath: bossFightThreshold
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6376599441814084380, guid: 3b4a7d03dbdaefe47b4c74d934abe76e, type: 3}
       propertyPath: m_LocalPosition.x

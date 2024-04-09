@@ -33,8 +33,7 @@ public class HookMove : MonoBehaviour
         }
         else
         {
-            lastPos.z = gameOffset.globalOffset + lastDiff;
-            transform.position = lastPos;
+            Destroy(gameObject);
         }
     } 
 }
