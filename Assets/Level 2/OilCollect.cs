@@ -8,7 +8,10 @@ public class OilCollect : MonoBehaviour
 
     public void collect()
     {
-        count.oilCollected++;
+        if (count != null)
+        {
+            count.oilCollected++;
+        }
         Destroy(gameObject);
     }
 

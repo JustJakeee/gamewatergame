@@ -8,7 +8,10 @@ public class Collection : MonoBehaviour
 
     public void collect()
     {
-        UI.UpdateScore(1);
+        if (UI != null)
+        {
+            UI.UpdateScore(1);
+        }
         Destroy(gameObject);
     }
 

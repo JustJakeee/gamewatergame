@@ -8,8 +8,6 @@ public class BossMove : MonoBehaviour
     private Offset offset;
     [SerializeField]
     private float verticalTransform;
-    [SerializeField]
-    private TrashGen trashGen;
 
     private void Update()
     {
