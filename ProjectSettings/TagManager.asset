@@ -7,6 +7,7 @@ TagManager:
   - WaterTiles
   - Hook
   - Damage
+  - RequiredCollect
   layers:
   - Default
   - TransparentFX
