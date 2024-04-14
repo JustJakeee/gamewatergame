@@ -11,6 +11,6 @@ public class BossMove : MonoBehaviour
 
     private void Update()
     {
-        transform.position = new Vector3(0, 0, offset.globalOffset + verticalTransform);
+        transform.position = new Vector3(transform.position.x, transform.position.y, offset.globalOffset + verticalTransform);
     }
 }
