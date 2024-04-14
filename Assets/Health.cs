@@ -18,7 +18,7 @@ public class Health : MonoBehaviour
 
     void Die()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("Lose Screen");
     }
 
     private void OnCollisionEnter(Collision collision)
