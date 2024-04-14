@@ -8,8 +8,7 @@ public class HookCollection : MonoBehaviour
 
     public void collect()
     {
-        bossHealth.damage();
-        Destroy(gameObject);
+        GetComponent<HookMove>().sendBack = true;
     }
 
     private void OnMouseDown()

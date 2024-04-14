@@ -6076,7 +6076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: {fileID: 1352693986}
-  restingHeight: 0
+  restingHeight: 1
   input:
     m_Name: Input
     m_Type: 0
@@ -6126,7 +6126,8 @@ MonoBehaviour:
       m_Action: Input
       m_Flags: 8
     m_Flags: 0
-  localMovespeed: 10
+  localMovespeed: 5
+  acceleration: 0.1
 --- !u!65 &292881145
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13872,6 +13873,7 @@ MonoBehaviour:
       m_Flags: 8
     m_Flags: 0
   localMovespeed: 10
+  acceleration: 0.4
 --- !u!65 &1289788601
 BoxCollider:
   m_ObjectHideFlags: 0
