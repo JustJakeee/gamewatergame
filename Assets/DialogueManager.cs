@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +13,8 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
 
     private Queue<string> sentences;
+
+    public Func<int> endBehavior;
 
     // Start is called before the first frame update
     void Start()
@@ -58,5 +62,9 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue ()
     {
         animator.SetBool("IsOpen", false);
+        if (endBehavior != null)
+        {
+            endBehavior();
+        }
     }
 }

@@ -11,6 +11,7 @@ public class HookMove : MonoBehaviour
     public Vector3 bossTransformAtSpawn;
     private Vector3 lastPos;
     private float lastDiff;
+    public bool sendBack = false;
 
     private void Start()
     {
@@ -19,9 +20,21 @@ public class HookMove : MonoBehaviour
 
     private void Update()
     {;
-        if (cooldown > 0)
+        if (cooldown > 1)
         {
-            cooldown -= Time.deltaTime;
+            GetComponent<HookCollection>().bossHealth.damage();
+            Destroy(gameObject);
+        }
+        else if (cooldown > 0)
+        {
+            if (sendBack)
+            {
+                cooldown += Time.deltaTime;
+            }
+            else
+            {
+                cooldown -= Time.deltaTime;
+            }
             Vector3 offsetVec = new Vector3(0, 0, gameOffset.globalOffset);
             Vector3 localOffsetVec = new Vector3(0, 0, localOffset);
             //transform.position = Vector3.Lerp(transform.position, playerPositionAtSpawn - offsetVec, cooldown);

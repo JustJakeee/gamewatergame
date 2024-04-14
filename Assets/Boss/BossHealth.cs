@@ -15,6 +15,11 @@ public class BossHealth : MonoBehaviour
 
     private void die()
     {
-        SceneManager.LoadScene("Level 2");
+        GetComponent<DialogueTriggerWithEnd>().TriggerDialogue(() =>
+        {
+            SceneManager.LoadScene("Level 2");
+            return 0;
+        });
+        gameObject.SetActive(false);
     }
 }

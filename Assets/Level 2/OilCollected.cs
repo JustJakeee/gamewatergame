@@ -6,9 +6,14 @@ using UnityEngine.SceneManagement;
 public class OilCollected : MonoBehaviour
 {
     public int oilCollected = 0;
-    
+    public GameObject whale;
+    public OilGen oilGen;
+    public WhaleState whaleState;
+    public int changeThreshold = 30;
     public int endThreshold = 100;
+    public int warningThreshold = 50;
     private DialogueTrigger dialogueTrigger;
+    private bool whaleSpawned = false;
 
     private void Start()
     {
@@ -17,9 +22,27 @@ public class OilCollected : MonoBehaviour
 
     private void Update()
     {
-        if (oilCollected >= endThreshold)
+        if (whaleSpawned)
         {
-            SceneManager.LoadScene("Main Menu");
+            if (oilCollected >= changeThreshold)
+            {
+                whaleState.whaleState--;
+                oilCollected = 0;
+            }
+        } 
+        else
+        {
+            if (oilCollected >= endThreshold)
+            {
+                whale.SetActive(true);
+                oilGen.enabled = false;
+                whaleSpawned = true;
+                oilCollected = 0;
+            }
+            else if (oilCollected >= warningThreshold)
+            {
+                dialogueTrigger.TriggerDialogue();
+            }
         }
     }
 }
