@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class BossHealth : MonoBehaviour
 {
     public float bossHealth = 5;
+    public PlayParticles particles;
     
     public void damage()
     {
         bossHealth -= 1;
+        particles.play();
         if (bossHealth <= 0) die();
     }
 

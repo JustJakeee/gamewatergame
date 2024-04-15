@@ -16,6 +16,8 @@ public class LevelOneUI : MonoBehaviour
     private bool bossFightStarted = false;
     private ScoreManager scoreManager;
     private DialogueTrigger dialogueTrigger;
+    public GameObject normalMusic;
+    public GameObject bossMusic;
 
     private void Start()
     {
@@ -35,6 +37,8 @@ public class LevelOneUI : MonoBehaviour
         {
             boss.SetActive(true);
             trashGen.enabled = false;
+            normalMusic.SetActive(false);
+            bossMusic.SetActive(true);
             bossFightStarted = true;
         }
     }

@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class Health : MonoBehaviour
 {
     public int health = 100;
+    public PlayParticles particles;
 
     public void TakeDamage(int damage)
     {
         health -= damage;
+        particles.play();
         if (health <= 0)
         {
             Die();

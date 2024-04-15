@@ -45,7 +45,7 @@ public class HookGen : MonoBehaviour
         }*/
 
         boxCenter = new Vector2(0, offset.globalOffset + verticalOffset);
-        GameObject newHook = Instantiate(hook, transform.position, Quaternion.identity);
+        GameObject newHook = Instantiate(hook, transform.position, Quaternion.Euler(0f, 0f, -90f));
         newHook.GetComponent<HookCollection>().bossHealth = health;
         newHook.GetComponent<HookMove>().gameOffset = offset;
         newHook.GetComponent<HookMove>().playerPositionAtSpawn = playerPosition;

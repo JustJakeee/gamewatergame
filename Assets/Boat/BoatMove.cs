@@ -14,6 +14,7 @@ public class BoatMove : MonoBehaviour
     private Vector2 localOffset = Vector2.zero;
     private Vector2 vel = Vector2.zero;
     public float acceleration = 0.4f;
+    public Vector2 bounds;
 
     private void OnEnable()
     {
@@ -31,8 +32,11 @@ public class BoatMove : MonoBehaviour
         moveDir = input.ReadValue<Vector2>();
         vel = Vector2.SmoothDamp(vel, moveDir, ref vel, acceleration);
         localOffset += vel * localMovespeed * Time.deltaTime;
+        localOffset.x = Mathf.Clamp(localOffset.x, -bounds.x, bounds.x);
+        localOffset.y = Mathf.Clamp(localOffset.y, -bounds.y, bounds.y);
         Vector3 newPos = new Vector3(localOffset.x, transform.position.y, localOffset.y + offset.globalOffset);
         transform.position = newPos;
+
         transform.rotation = Quaternion.Euler(0, 180, 0);
         Quaternion rot = transform.rotation;
         rot.eulerAngles += new Vector3(0, vel.x * 20, vel.x * 10);

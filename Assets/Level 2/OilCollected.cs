@@ -14,6 +14,8 @@ public class OilCollected : MonoBehaviour
     public int warningThreshold = 50;
     private DialogueTrigger dialogueTrigger;
     private bool whaleSpawned = false;
+    public GameObject normalMusic;
+    public GameObject bossMusic;
 
     private void Start()
     {
@@ -36,6 +38,8 @@ public class OilCollected : MonoBehaviour
             {
                 whale.SetActive(true);
                 oilGen.enabled = false;
+                normalMusic.SetActive(false);
+                bossMusic.SetActive(true);
                 whaleSpawned = true;
                 oilCollected = 0;
             }
