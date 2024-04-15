@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class tempBossSpawn : MonoBehaviour
 {
     public GameObject boss;
+    public GameObject yapper;
     public float timer = .3f;
     private DialogueTriggerWithEnd dialogueTrigger;
 
@@ -33,6 +34,7 @@ public class tempBossSpawn : MonoBehaviour
         Func<int> endBehavior = () =>
         {
             boss.SetActive(true);
+            yapper.SetActive(false);
             return 0;
         };
 
