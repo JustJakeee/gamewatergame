@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayParticles : MonoBehaviour
 {
+
+    public AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,11 @@ public class PlayParticles : MonoBehaviour
     // Update is called once per frame
     public void play()
     {
+        if (audio != null)
+        {
+            audio.Play();
+        }
+
         foreach (ParticleSystem ps in GetComponentsInChildren<ParticleSystem>())
         {
             ps.Play();

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Collection : MonoBehaviour
 {
     public ScoreManager UI;
+    public AudioSource collectSound;
 
     public void collect()
     {
@@ -12,6 +13,7 @@ public class Collection : MonoBehaviour
         {
             UI.UpdateScore(1);
         }
+        collectSound.Play();
         Destroy(gameObject);
     }
 

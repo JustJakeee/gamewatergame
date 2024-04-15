@@ -17,6 +17,7 @@ public class OilCollect : MonoBehaviour
 
     private void OnMouseOver()
     {
+        print("Mouse over");
         if (Input.GetMouseButton(0))
         {
             print("Mouse clicked");

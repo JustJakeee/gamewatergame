@@ -5,7 +5,7 @@ using UnityEngine;
 public class LoseCondition : MonoBehaviour
 {
     public Offset offset;
-    private int count = 0;
+    public int count = 0;
     public int threshold = 30;
 
     void Start()
@@ -23,12 +23,13 @@ public class LoseCondition : MonoBehaviour
             if (collectible.transform.position.z < offset.globalOffset - 10)
             {
                 count++;
+                Destroy(collectible);
             }
         }
 
         if (count >= threshold)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Main Menu");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Lose Screen");
         }
     }
 }

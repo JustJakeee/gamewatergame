@@ -17,6 +17,7 @@ public class OilBlobGen : MonoBehaviour
     private float cooldown = 3;
     private CleanMeter cleanMeter;
     public float delay = 1;
+    public PlayParticles playParticles;
 
 
     // Start is called before the first frame update
@@ -33,6 +34,7 @@ public class OilBlobGen : MonoBehaviour
         if (cooldown > 0) return;
 
         GameObject newHook = Instantiate(oilBlob, blobSpawn.transform.position, Quaternion.identity);
+        playParticles.play();
         newHook.SetActive(true);
         newHook.GetComponent<OilBlobMove>().bossTransformAtSpawn = blobSpawn.transform.position;
         cooldown = delay;

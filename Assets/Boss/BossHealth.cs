@@ -5,14 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class BossHealth : MonoBehaviour
 {
-    public float bossHealth = 5;
+    public int bossHealth = 5;
     public PlayParticles particles;
+    public HealthBar healthBar;
+    public GameObject healthBarPrefab;
     
     public void damage()
     {
         bossHealth -= 1;
         particles.play();
-        if (bossHealth <= 0) die();
+        if (bossHealth <= 3) die();
     }
 
     private void die()
@@ -23,5 +25,12 @@ public class BossHealth : MonoBehaviour
             return 0;
         });
         gameObject.SetActive(false);
+        healthBarPrefab.SetActive(false);
+
+    }
+
+    private void Update()
+    {
+        healthBar.SetHealth(bossHealth);
     }
 }
